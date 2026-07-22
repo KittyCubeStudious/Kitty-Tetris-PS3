@@ -36,7 +36,8 @@ jobs:
         export PATH=$PATH:$PS3DEV/bin:$PS3DEV/ppu/bin:$PS3DEV/spu/bin
 
     - name: Upload Finished PS3 PKG
-      uses: actions/artifacts@v4
+      uses: actions/upload-artifact@v4
+  
       with:
         name: Kitty-Tetris-PS3-Package
         path: "*.pkg"
